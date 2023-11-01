@@ -4,16 +4,6 @@
     gap: 1rem;
 }
 
-.video-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-right: 65%;
-  font-size: 10px;
-
-}
-
 .video-container video {
   max-width: 50%;
   height: auto;
@@ -29,6 +19,15 @@
 
 }
 
+/*.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: 65%;
+    font-size: 10px;
+  
+  }
 .projets-container.projet-2 {
     display: inline-block;
     margin: 10px;
@@ -63,7 +62,35 @@
 
 .projets-container .projet-3{
     margin-left: 50%
-}
+}*/
+
+
+
+.projets-container {
+    display: flex; /* Utilisez Flexbox pour aligner les projets horizontalement */
+    justify-content: space-between; /* Ajoute de l'espace entre les projets */
+  }
+  
+  .video-container,
+  .projet-2,
+  .projet-3 {
+    flex: 1; 
+    padding: 15px; 
+    text-align: center;
+    padding-top: 5%;
+  }
+
+  .projet-2 {
+    padding-top: 15%;
+  }
+
+  .projet-3{
+    padding-top: 15%;
+  }
+  
+
+  
+
 
   /* Styles pour les smartphones */
   @media screen and (max-width: 767px) {

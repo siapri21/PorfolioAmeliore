@@ -43,3 +43,50 @@
     margin-right: 800px;
     font-weight: 600;
 }
+
+.mine{
+    margin-bottom: 2%;
+}
+
+/* Styles pour les écrans de petite taille (smartphones) */
+@media screen and (max-width: 768px) {
+    body {
+      font-size: 16px; 
+    }
+  
+    .container .box {
+      width: 95%; 
+      padding: 20px;
+    }
+  
+    .acceuil_introduction {
+      flex-direction: column; /* Afficher le logo et les liens en colonne */
+      text-align: center;
+    }
+  
+    .logo {
+      margin-bottom: 20px;
+    }
+  
+    .lien_group {
+      flex-direction: column; 
+      margin-top: 20px;
+    }
+  
+    .about .personnalite {
+      text-align: left; 
+    }
+  
+    .about .personnalite p {
+      font-size: 14px; 
+    }
+  
+    .about .personnalite img {
+      width: 40px; 
+    }
+  
+    .about .web img {
+      width: 100%; 
+    }
+  }
+  

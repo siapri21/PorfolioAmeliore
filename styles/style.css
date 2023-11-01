@@ -180,3 +180,17 @@
 .section-2:hover .girl{
     bottom: 45%;
 }
+
+@media screen and (max-width: 767px) {
+    .lien_group {
+      display: none; /* Masquer la navigation */
+    }
+    
+    .section-1 {
+      font-size: 16px; /* Réduire la taille de la police */
+    }
+    
+    .girl, .color {
+      max-width: 100%; /* Redimensionner les images pour s'adapter à l'écran */
+    }
+  }

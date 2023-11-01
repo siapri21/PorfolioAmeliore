@@ -62,6 +62,27 @@
 }
 
 .projets-container .projet-3{
-    margin-left: 100px
+    margin-left: 50%
 }
+
+  /* Styles pour les smartphones */
+  @media screen and (max-width: 767px) {
+    .video-container {
+      text-align: center;
+    }
+    .video-container video {
+      max-width: 100%;
+      height: auto;
+    }
+    .projet-2,
+    .projet-3 {
+      text-align: center;
+    }
+    .projet-2 img,
+    .projet-3 img {
+      max-width: 100%;
+      height: auto;
+      width: 80%; /* Ajustez la largeur selon vos besoins */
+    }
+  }
   

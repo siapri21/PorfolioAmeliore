@@ -87,4 +87,38 @@ form {
     color: #fff;
 
   }
+
+/* Styles pour les smartphones */
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 20px; /* Augmente l'espacement pour une meilleure lisibilité */
+  }
+
+  ul {
+    list-style: none; /* Supprime les puces de la liste */
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 15px; /* Ajoute de l'espace entre les éléments de la liste */
+  }
+
+  label {
+    display: block; /* Affiche les étiquettes en bloc pour les centrer */
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .button {
+    text-align: center;
+  }
+
+
+
+
   

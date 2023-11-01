@@ -32,9 +32,9 @@
     height: 86vh;
     width: 75%;
     padding:  0 20px;
-    background-color: #b8b8d1;
+    background-color: #b5b5d6;
     z-index: 10;
-    border: 2px solid rgba(255, 255, 255, 0.7);
+    border: 2px solid rgba(134, 41, 41, 0.7);
     border-radius: 20px;
     display: flex;
     backdrop-filter: blur(25px);
@@ -151,32 +151,32 @@
 }*/
 
 
-.section-2 {
-    text-align: center; /* Centre le contenu horizontalement */
-  }
-  
-  .circle-container {
-    position: relative;
-    width: 150px; /* La largeur et la hauteur du cercle, à adapter selon vos besoins */
-    height: 150px;
-    border-radius: 50%; /* Crée un cercle en utilisant la propriété border-radius */
-    background-color: #6f34fe; /* Couleur de fond */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden; /* Masque le contenu qui dépasse du cercle */
-  }
-  
-  .circle-container::after {
-    content: "";
+.section-2{
+    width:  200%;
+    height: 100%;
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    bottom: 80px;
+    left: -300px;
+}
+.section-2 img{
+    height: 100%;
+    position: absolute;
+    left: 100%;
     bottom: 0;
-    background: url("images/siap.png") center center no-repeat;
-    background-size: cover;
-    border-radius: 50%; /* Garde les coins de l'image en forme de cercle pour correspondre au conteneur */
-  }
-  
-  
+    transform: translate(-50%);
+    transition: bottom 1s, left 1s;
+}
+.section-2 .girl{
+    height: 45%;
+    border-radius: 50%;
+}
+.section-2 .color{
+    height: 60%;
+}
+.section-2:hover .color{
+    bottom: 40px;
+}
+
+.section-2:hover .girl{
+    bottom: 45%;
+}

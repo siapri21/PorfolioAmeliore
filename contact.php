@@ -26,7 +26,7 @@
             <li class="lien active"><a href="index.html">Home</a></li>
             <li class="lien"><a href="projets.html">Projets</a></li>
             <li class="lien"><a href="about.html">About</a></li>
-            <li class="lien"><a href="contact.html">Contact</a></li>
+            <li class="lien"><a href="contact.php">Contact</a></li>
         </ul>
     </nav>
 
@@ -35,25 +35,67 @@
     <div id="contact" class="section-contact">
 
    <!--  formulaire -->
-   <form action="/ma-page-de-traitement" method="post">
+   <!-- <form action="/ma-page-de-traitement" method="post"> -->
+
+
+   <?php
+
+   $nom = $email = $message = "";
+
+  //  if($_SERVER["REQUEST_METHOD"] == "POST"){
+  //   //recupere les données du formulaire 
+  //   $nom = $_POST["nom"];
+  //   $email = $_POST["email"];
+  //   $message = $_POST["message"];
+
+  //  }   
+
+  // Vérifier si le formulaire a été soumis
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  // Récupérer les données du formulaire
+  $nom = test_input($_POST["user_name"]);
+  $email = test_input($_POST["user_mail"]);
+  $message = test_input($_POST["user_message"]);
+
+  // Votre logique de traitement ici (par exemple, enregistrement dans la base de données)
+}
+   
+    // Fonction pour nettoyer les données du formulaire
+    function test_input($data) {
+      $data = trim($data);
+      $data = stripslashes($data);
+      $data = htmlspecialchars($data);
+      return $data;
+  }
+
+   ?>
+
+
+  <!-- if(!empty($nom) && !empty($email) && !empty($message))-->
+
+
+   <form  method="post" action = "<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);  ?>" >
+
     <ul>
       <li>
-        <label for="name">Nom&nbsp;:</label>
-        <input type="text" id="name" name="user_name" />
+        <label for="name">Nom:</label>
+        <input type="text" id="name" name="user_name" placeholder="Votre Nom" value="<?php echo $nom; ?>" required/>
       </li>
       <li>
-        <label for="mail">E-mail&nbsp;:</label>
-        <input type="email" id="mail" name="user_mail" />
+        <label for="mail">E-mail:</label>
+        <input type="email" id="mail" name="user_mail" placeholder="Votre Email" value = "<?php echo $email ; ?>" required  />
       </li>
       <li>
-        <label for="msg">Message&nbsp;:</label>
-        <textarea id="msg" name="user_message"></textarea>
+        <label for="msg">Message:</label>
+        <textarea id="msg" name="user_message" placeholder="Message" value = "<?php echo $message ; ?>"></textarea>
       </li>
     </ul>
-  </form>
-  <div class="button">
+
+    <div class="button">
     <button type="submit">Envoyer le message</button>
   </div>
+
+  </form>
 </div>
     </div>
    </section>

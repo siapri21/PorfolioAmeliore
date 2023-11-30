@@ -128,7 +128,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 				<div>
 					<i class="fa fa-map-marker"></i>
-					<p><span>25/27 Ave</span> de la République</p>
+					<p><span>25/27 Avenue</span> de la République</p>
 				</div>
 
 				<div>
@@ -138,7 +138,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 				<div>
 					<i class="fa fa-envelope"></i>
-					<p><a href="mailto:support@company.com">support@estiam.com</a></p>
+          <p><a href="mailto:support@company.com">siapriouattara23@hotmail.com</a></p>
 				</div>
 
 			</div>
@@ -150,14 +150,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 					C'est ma passion qui m'anime
 				</p>
 
-				<div class="footer-icons">
+        <a href="https://www.linkedin.com/in/ouattara-siapri/">
+                        <img src="images/linkedin.png" alt="linkedin" width="15%">
+                    </a>
 
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-linkedin"></i></a>
-					<a href="#"><i class="fa fa-github"></i></a>
-
-				</div>
+					<a href="https://github.com/siapri21">
+                        <img src="images/github.png" alt="github" width="15%">
+                    </a>
 
 			</div>
 

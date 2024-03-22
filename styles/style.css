@@ -9,13 +9,17 @@
 
 /*body*/
 
+body{
+  background-image: url(../images/wave-2049985_1280.jpg);
+}
+
 .container{
     height: 100vh;
     width: 100%;
     position: relative;
     background-size: cover;
     background-position: center;
-    background: rgba(65, 55, 20, 0.393);
+    /* background-image: url(../images/digital-art-396825_1280.png); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +28,7 @@
     height: 86vh;
     width: 75%;
     padding:  0 20px;
-    background-color: #5c460ae8;
+    background-image: url(../images/digital-graphicscat-6747298_1280.jpg);
     z-index: 10;
     border: 2px solid #9550e90c;
     border-radius: 20px;
@@ -144,7 +148,7 @@
 section {
     width: 100%;
     display: inline-block;
-    background: #5c460ae8;
+    /* background: #e14d0365; */
     height: 7vh;
     text-align: center;
     font-size: 22px;
@@ -153,7 +157,7 @@ section {
   }
   
 .footer-distributed{
-      background: #5c460ae8;
+      background: #d86c3682;
       box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
       box-sizing: border-box;
       width: 100%;
